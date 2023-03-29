@@ -1,0 +1,41 @@
+.main{
+    height: 500px;
+    width: 500px;
+    margin: auto;
+    position: relative;
+}
+.box{
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+    box-shadow: 20px 0px 20px rgb(255, 0, 179);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    animation-name: box;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes box{
+    0%{
+        top: 0px;
+        left: 0px;
+    }
+    25%{
+        top: 0px;
+        left: 350px;
+    }
+    50%{
+        top: 350px;
+        left: 350px;
+    }
+    75%{
+        top: 350px;
+        left: 0px;
+    }
+    100%{
+        top: 0px;
+        left: 0px;
+    }
+}
